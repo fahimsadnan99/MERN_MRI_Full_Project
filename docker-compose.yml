@@ -1,0 +1,17 @@
+version: "3.9"
+
+networks:
+  web:
+    external: true
+
+services:
+  app:
+    build:
+      context: .
+    labels:
+      - traefik.http.routers.mrireact.rule=Host(`mri.edalytics.com`)
+      - traefik.http.routers.mrireact.tls=true
+      - traefik.http.routers.mrireact.tls.certresolver=lets-encrypt
+      - traefik.port=80
+    networks:
+      - web

@@ -1,0 +1,37 @@
+.p_relative{
+
+    position: relative;
+}
+.p_absolute{
+    position:absolute;
+   
+}
+
+.first_direction{
+    left: 50%;
+    right: 50%;
+    /* display: block; */
+  
+    top: -3px;
+
+
+
+}
+.second_direction{
+
+    top: 50%;
+   
+    right: 3px;
+}
+
+.third_direction{
+
+    bottom: 3px;
+    left: 50%;
+}
+
+.fourth_direction{
+
+    top: 50%;
+    left: 3px;
+}

@@ -1,0 +1,54 @@
+.Resolution{
+
+    width: 45px !important;
+}
+
+.dropdown-wrapper{
+
+     min-height: 400px;
+     width: 90%;
+}
+.input-filed-custom-style-min-max{
+    width: 100% !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    background-color: transparent !important;
+}
+
+.protocol-wrapper{
+max-height: 400px;
+
+border: 1px solid #4d63cf;
+     
+}
+.protocol-wrapper-display{
+    height:200px;
+    width:100%;
+    border: 2px solid #4d63cf;
+
+}
+.protocol-wrapper li{
+ list-style-type: none;
+ padding: 6px;
+ cursor:pointer;
+
+     
+}
+
+
+.protocol-wrapper h5{
+    background-color: #eef1fd;
+    color: #4d63cf;
+    padding: 10px;
+    margin: 0 -12px;
+    margin-left: -13px;
+    
+    font-size: 14px;
+     
+}
+
+.border-color-rate-advantage{
+    border: 2px solid #4d63cf !important;
+
+}

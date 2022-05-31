@@ -1,0 +1,79 @@
+.backend_dashboard {
+  margin-top: 100px;
+}
+
+.backend_dashboard .input-title {
+  display: inline !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  background: transparent !important;
+  width: 60% !important;
+  margin: 0 5px !important;
+}
+.backend_dashboard .input-textarea {
+  display: inline !important;
+
+  min-height: 100px;
+  background: transparent !important;
+  width: 80% !important;
+  margin: 0 5px !important;
+}
+.backend_dashboard .modes-radio-button {
+  margin-left: 9px;
+}
+
+/* file upload css  */
+
+.learn_B_file_upload_container {
+  position: relative;
+  /* margin-bottom: 177px; */
+  margin-bottom: 177px;
+}
+.learn_B_file_upload_container form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 200px;
+  height: 123px;
+  border: 4px dashed #2a3042;
+  cursor: pointer;
+}
+.learn_B_file_upload_container form p {
+  text-align: center;
+  color: #2a3042;
+  font-family: Arial;
+  margin-top: 30px;
+  margin-bottom: 33px;
+}
+.learn_B_file_upload_container form input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+}
+.learn_B_file_upload_container button {
+  width: 100%;
+}
+
+@media (max-width: 860px) {
+  .backend_dashboard .input-title {
+    width: 60% !important;
+  }
+}
+@media (max-width: 992px) {
+  .learn_B_file_upload_container {
+    position: relative;
+    margin-bottom: 177px;
+  }
+}
+
+.cursor{
+
+  cursor: pointer;
+}

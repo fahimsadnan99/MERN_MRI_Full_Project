@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "670efea2-9cb6-4c06-be2d-4cb4e68b15da",
+		"name": "MRI PRACTICE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Activity",
+			"item": [
+				{
+					"name": "Add Activity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"activity_title\":\"Activity Test\",\r\n    \"title\":\"Dummy Title\",\r\n    \"introduction\":\"Some introduction......\",\r\n    \"mode\":\"Learn\",\r\n    \"exercise_type\":\"Parameter\", \r\n    \"field_strength\":\"1.5T\",\r\n    \"rf_coils\":[\"Whole Body Receiver\",\"knee(Transmit-Receive)\",\"Brain/Neck(Receive only)\"], \r\n    \"body_parts\":\"Brain\",\r\n    \"document\" : \"https://google.com/logo.png\",\r\n    \"popupq_yesno\":\"Brain\",\r\n    \"popup_question\":\"Brain\",\r\n    \"popup_ans1\":\"Brain\",\r\n    \"popup_ans2\":\"Brain\",\r\n    \"popup_ans3\":\"Brain\",\r\n    \"popup_ans4\":\"Brain\",\r\n    \"popup_correct_ans\":\"Brain\",\r\n    \"parameters\" : [\r\n                        {\r\n                            \"default_level_parameter\": \"Slice Thickness\",\r\n                            \"default_level_parameter_values\": \"5 mm\",\r\n                            \"high_level_parameter\": \"SNR\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"5 ms\",\r\n                            \"high_level_parameter_min_value\": \"5 ms\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"Slice Gap\",\r\n                            \"default_level_parameter_values\": \"5 mm\",\r\n                            \"high_level_parameter\": \"CNR\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"5 ms\",\r\n                            \"high_level_parameter_min_value\": \"5 ms\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"FOV\",\r\n                            \"default_level_parameter_values\": \"5 mm\",\r\n                            \"high_level_parameter\": \"Scan Time\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"5 ms\",\r\n                            \"high_level_parameter_min_value\": \"5 ms\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"PE\",\r\n                            \"default_level_parameter_values\": \"5\",\r\n                            \"high_level_parameter\": \"Temporal Resolution\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"5 ms\",\r\n                            \"high_level_parameter_min_value\": \"5 ms\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"FE\",\r\n                            \"default_level_parameter_values\": \"5\",\r\n                            \"high_level_parameter\": \"SAR\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"5 W/Kg\",\r\n                            \"high_level_parameter_min_value\": \"5 W/Kg\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"#Slices\",                            \"default_level_parameter_values\": \"5\",\r\n                            \"high_level_parameter\": \"SED\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"5 J/Kg\",\r\n                            \"high_level_parameter_min_value\": \"5 J/Kg\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },                        \r\n                        {\r\n                            \"default_level_parameter\": \"Phase Direction\",\r\n                            \"default_level_parameter_values\": \"0\",\r\n                            \"high_level_parameter\": \"B1+rms\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"5 Microtesla\",\r\n                            \"high_level_parameter_min_value\": \"5 Microtesla\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"Alias On | OF\",\r\n                            \"default_level_parameter_values\": \"0\",\r\n                            \"high_level_parameter\": \"PNS\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"5 T/m/s\",\r\n                            \"high_level_parameter_min_value\": \"5 T/m/s\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"React FOV\",\r\n                            \"default_level_parameter_values\": \"5%\",\r\n                            \"high_level_parameter\": \"0\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"0\",\r\n                            \"high_level_parameter_min_value\": \"0\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"NSA\",\r\n                            \"default_level_parameter_values\": \"5\",\r\n                            \"high_level_parameter\": \"0\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"0\",\r\n                            \"high_level_parameter_min_value\": \"0\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"NA\",\r\n                            \"default_level_parameter_values\": \"5\",\r\n                            \"high_level_parameter\": \"0\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"0\",\r\n                            \"high_level_parameter_min_value\": \"0\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"Saturation On | Off\",\r\n                            \"default_level_parameter_values\": \"0\",\r\n                            \"high_level_parameter\": \"0\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"0\",\r\n                            \"high_level_parameter_min_value\": \"0\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Restore On | Off\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Half Fourier\",\r\n                                \"default_level_parameter_values\": \"5 %\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Parallel Imaging On | Off\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Confirm Frequency Yes | No (use a parameter_default_hide_value)\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Cardiac gating Retrospective | Prospective\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },   \r\n                        {\r\n                                \"default_level_parameter\": \"Cardiac Segment\",\r\n                                \"default_level_parameter_values\": \"5 \",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },                                                                                      \r\n                        {\r\n                                \"default_level_parameter\": \"Cardiac Phase\",\r\n                                \"default_level_parameter_values\": \"5 \",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Trigger Window\",\r\n                                \"default_level_parameter_values\": \"5 ms\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Trigger Delay\",\r\n                                \"default_level_parameter_values\": \"5 ms\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Acquisition Window\",\r\n                                \"default_level_parameter_values\": \"5 ms\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Measurement\",\r\n                                \"default_level_parameter_values\": \"5 \",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"RBW\",\r\n                                \"default_level_parameter_values\": \"5 Hz/px\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"ETL\",\r\n                                \"default_level_parameter_values\": \"5 mm\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Gradient Mode On | Off\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"RF Mode On | Off\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"VENC\",\r\n                                \"default_level_parameter_values\": \"5 cm/s\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },       \r\n                        {\r\n                                \"default_level_parameter\": \"B Value\",\r\n                                \"default_level_parameter_values\": \"5 \",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },                                                                                         \r\n                        {\r\n                                \"default_level_parameter\": \"R.R\",\r\n                                \"default_level_parameter_values\": \"5 ms\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Breathhold On | Off\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        }\r\n                   ],\r\n    \"questions\" : [\r\n                        {\r\n                            \"question_title\" : \"Example Question 1 for question_type = 1 // 1 means mcq\",\r\n                            \"question_type\" : \"1\",\r\n                            \"question_short_ans\" : \"\",\r\n                            \"question_ans1\" : \"abcd\",\r\n                            \"question_ans2\" : \"efgh\",\r\n                            \"question_ans3\" : \"ijklm\",\r\n                            \"question_ans4\" : \"nopq\",\r\n                            \"question_correct\" : \"1\"\r\n                        },\r\n                        {\r\n                            \"question_title\" : \"Example Question 1 for question_type = 2 // 2 means short answer\",\r\n                            \"question_type\" : \"2\",\r\n                            \"question_short_ans\" : \"short answer short answer short answer\",\r\n                            \"question_ans1\" : \"\",\r\n                            \"question_ans2\" : \"\",\r\n                            \"question_ans3\" : \"\",\r\n                            \"question_ans4\" : \"\",\r\n                            \"question_correct\" : \"\"\r\n                        }\r\n                  ],\r\n    \"image_contrast\" : \"T1\",\r\n    \"pluse_sequence\" : \"SE\",\r\n    \"parameter_images\" : [\"a\",\"a\",\"a\"],\r\n    \"p_height\" : \"0\",\r\n    \"p_width\" : \"0\",\r\n    \"p_x\" : \"0\",\r\n    \"p_y\" : \"0\",\r\n    \"p_angle\" : \"0\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}add-activity",
+							"host": [
+								"{{localhost}}add-activity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Activity Document",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Mahantesh/Downloads/rootkey.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}add-document",
+							"host": [
+								"{{localhost}}add-document"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Activity Parameter Pic",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Mahantesh/Pictures/Untitled.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}add-parameter-pics",
+							"host": [
+								"{{localhost}}add-parameter-pics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Activity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}list-activity",
+							"host": [
+								"{{localhost}}list-activity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Single Activity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "activityId",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}view-activity",
+							"host": [
+								"{{localhost}}view-activity"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Exam",
+			"item": [
+				{
+					"name": "Dump Exam Data",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "activityId",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "StudentId",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"activity_type\" : \"Question1\",\r\n    \"question_answers\" : [\r\n                            {\r\n                                \"questionId\" : 1,\r\n                                \"mcqAns_or_shortAns\" : \"1\",\r\n                                \"question_type\" : 1\r\n                            },\r\n                                                        {\r\n                                \"questionId\" : 2,\r\n                                \"mcqAns_or_shortAns\" : \"Some Short Answer can be here\",\r\n                                \"question_type\" : 2\r\n                            }\r\n                         ],\r\n    \"parameter_data\" : [\r\n                             {\r\n                            \"default_level_parameter\": \"Slice Thickness\",\r\n                            \"default_level_parameter_values\": \"6 mm\",\r\n                            \"high_level_parameter\": \"SNR\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"6 ms\",\r\n                            \"high_level_parameter_min_value\": \"6 ms\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"Slice Gap\",\r\n                            \"default_level_parameter_values\": \"6 mm\",\r\n                            \"high_level_parameter\": \"CNR\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"6 ms\",\r\n                            \"high_level_parameter_min_value\": \"6 ms\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"FOV\",\r\n                            \"default_level_parameter_values\": \"6 mm\",\r\n                            \"high_level_parameter\": \"Scan Time\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"6 ms\",\r\n                            \"high_level_parameter_min_value\": \"6 ms\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"PE\",\r\n                            \"default_level_parameter_values\": \"6\",\r\n                            \"high_level_parameter\": \"Temporal Resolution\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"6 ms\",\r\n                            \"high_level_parameter_min_value\": \"6 ms\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"FE\",\r\n                            \"default_level_parameter_values\": \"6\",\r\n                            \"high_level_parameter\": \"SAR\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"6 W/Kg\",\r\n                            \"high_level_parameter_min_value\": \"6 W/Kg\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"#Slices\",                            \"default_level_parameter_values\": \"6\",\r\n                            \"high_level_parameter\": \"SED\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"6 J/Kg\",\r\n                            \"high_level_parameter_min_value\": \"6 J/Kg\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },                        \r\n                        {\r\n                            \"default_level_parameter\": \"Phase Direction\",\r\n                            \"default_level_parameter_values\": \"0\",\r\n                            \"high_level_parameter\": \"B1+rms\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"6 Microtesla\",\r\n                            \"high_level_parameter_min_value\": \"6 Microtesla\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"Alias On | OF\",\r\n                            \"default_level_parameter_values\": \"0\",\r\n                            \"high_level_parameter\": \"PNS\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"6 T/m/s\",\r\n                            \"high_level_parameter_min_value\": \"6 T/m/s\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"React FOV\",\r\n                            \"default_level_parameter_values\": \"6%\",\r\n                            \"high_level_parameter\": \"0\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"0\",\r\n                            \"high_level_parameter_min_value\": \"0\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"NSA\",\r\n                            \"default_level_parameter_values\": \"6\",\r\n                            \"high_level_parameter\": \"0\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"0\",\r\n                            \"high_level_parameter_min_value\": \"0\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"NA\",\r\n                            \"default_level_parameter_values\": \"6\",\r\n                            \"high_level_parameter\": \"0\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"0\",\r\n                            \"high_level_parameter_min_value\": \"0\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                            \"default_level_parameter\": \"Saturation On | Off\",\r\n                            \"default_level_parameter_values\": \"0\",\r\n                            \"high_level_parameter\": \"0\",\r\n                            \"high_level_parameter_hide_value\": 0,\r\n                            \"high_level_parameter_max_value\": \"0\",\r\n                            \"high_level_parameter_min_value\": \"0\",\r\n                            \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Restore On | Off\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Half Fourier\",\r\n                                \"default_level_parameter_values\": \"6 %\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Parallel Imaging On | Off\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Confirm Frequency Yes | No (use a parameter_default_hide_value)\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Cardiac gating Retrospective | Prospective\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },   \r\n                        {\r\n                                \"default_level_parameter\": \"Cardiac Segment\",\r\n                                \"default_level_parameter_values\": \"6 \",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },                                                                                      \r\n                        {\r\n                                \"default_level_parameter\": \"Cardiac Phase\",\r\n                                \"default_level_parameter_values\": \"6 \",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Trigger Window\",\r\n                                \"default_level_parameter_values\": \"6 ms\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Trigger Delay\",\r\n                                \"default_level_parameter_values\": \"6 ms\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Acquisition Window\",\r\n                                \"default_level_parameter_values\": \"6 ms\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Measurement\",\r\n                                \"default_level_parameter_values\": \"6 \",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"RBW\",\r\n                                \"default_level_parameter_values\": \"6 Hz/px\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"ETL\",\r\n                                \"default_level_parameter_values\": \"6 mm\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Gradient Mode On | Off\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"RF Mode On | Off\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"VENC\",\r\n                                \"default_level_parameter_values\": \"6 cm/s\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },       \r\n                        {\r\n                                \"default_level_parameter\": \"B Value\",\r\n                                \"default_level_parameter_values\": \"6 \",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },                                                                                         \r\n                        {\r\n                                \"default_level_parameter\": \"R.R\",\r\n                                \"default_level_parameter_values\": \"6 ms\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        },\r\n                        {\r\n                                \"default_level_parameter\": \"Breathhold On | Off\",\r\n                                \"default_level_parameter_values\": \"0\",\r\n                                \"high_level_parameter\": \"0\",\r\n                                \"high_level_parameter_hide_value\": 0,\r\n                                \"high_level_parameter_max_value\": \"0\",\r\n                                \"high_level_parameter_min_value\": \"0\",\r\n                                \"parameter_default_hide_value\": 0\r\n                        }\r\n                       ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}activity-exam",
+							"host": [
+								"{{localhost}}activity-exam"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Result",
+			"item": [
+				{
+					"name": "Activity Result",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "studentid",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "activityid",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{mri}}activity-result",
+							"host": [
+								"{{mri}}activity-result"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Superadmin-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\":\"admin@mri.com\",\r\n\"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mri}}login",
+					"host": [
+						"{{mri}}login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

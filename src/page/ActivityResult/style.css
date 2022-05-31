@@ -1,0 +1,126 @@
+
+.activityListContainer{
+    max-height: 80vh;
+    overflow-y: scroll;
+
+
+
+}
+.activityListContainer p{
+
+    cursor: pointer;
+    padding: 5px;
+}
+.activityListContainer .active{
+
+   background: cornflowerblue;
+   color: #fff;
+}
+
+
+.activityListContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.activityListContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.activityListContainer::-webkit-scrollbar-thumb {
+  background: cornflowerblue; 
+  border-radius: 10px;
+}
+.activity_result_heding{
+
+    font-size: 26px;
+    font-weight: 800;
+    color: cornflowerblue;
+}
+.question_title{
+
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(31, 32, 33);
+}
+.sortAns{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(31, 32, 33, 0.818);
+    padding-left: 20px;
+     
+}
+
+li{
+
+    list-style-type: none;
+}
+
+.answerOption {
+    background-color: #ececec;
+    list-style-type: none;
+  }
+.radioCustomButton {
+    position: absolute;
+    width: auto;
+    opacity: 0;
+  }
+  
+  .radioCustomButton,
+  .radioCustomLabel {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  .radioCustomLabel {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 10px 3.5rem;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+ .radioCustomLabel:before {
+    position: absolute;
+    top: 8px;
+    left: 11px;
+    width: 28px;
+    height: 28px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  
+  .radioCustomLabelRightAns:before {
+    content: '';
+    background: #8bc53f url("./checkendIcon.svg") no-repeat;
+    background-size: 27px;
+    border-color: #8bc53f;
+  }
+  .radioCustomLabelWrongAns:before {
+    content: '';
+    background: #8bc53f url("./cross.png") no-repeat;
+    background-size: 27px;
+    border-color: #8bc53f;
+  }
+
+  .right_ans_bg{
+
+    background-color: rgba(0, 128, 0, 0.615);
+    color:white;
+  }
+
+  /* perameter result title  */
+
+  .perameterResultTitle{
+
+     font-weight: 600;
+     font-size: 16px;
+  }
